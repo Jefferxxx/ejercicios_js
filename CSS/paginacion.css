@@ -1,63 +1,70 @@
 :root {
 
-    --shadow-black: 50px 10px 5px black;
-    --shadow-orange: 50px 10px 5px orange;
-    --pagination-padding: 100px;
-    --pagination-margin: 200px 0;
-    --item-padding: 10px 15px;
-    --item-margin: 0 5px;
-    --border-color: #ddd;
-    --border-radius: 5px;
-    --text-color: #333;
-    --hover-bg-color: #f0f0f0;
-    --active-bg-color: #666;
-    --active-text-color: #fff;
-   }
-   body{
-   
-   background-color: beige;
-   
-   }
-   .titulo{
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     position: relative;
-   
-    
-   }
-   .parrafo{
-     align-items: center;
-     justify-content: center;
-     display: flex;
-   
-   }
-   
-   .navbar{
-    font-family: sans-serif;
-     color: rgb(113, 113, 113);
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     position: relative;
-     top: 50px;
-     font-size: 60px;
-   }
+--shadow-black: 50px 10px 5px black;
+--shadow-orange: 50px 10px 5px orange;
+--pagination-padding: 100px;
+--pagination-margin: 200px 0;
+--item-padding: 10px 15px;
+--item-margin: 0 5px;
+--border-color: #ddd;
+--border-radius: 5px;
+--text-color: #333;
+--hover-bg-color: #f0f0f0;
+--active-bg-color: #666;
+--active-text-color: #fff;
+}
 
-   div{
-    border: 8px solid #fff;
-    padding:  15px 60px;
-    border-radius: 16px;
-    box-shadow: inset 0 0 15px #fff;
-    position: relative;
-   }
+body{
+background-color: beige;
 
-   .navbar:hover{
-    color: #fff;
-    text-shadow: 0 0 5px #fff,
-    0 0 20px #fff,
-    0 0 45px #fff,
-    0 0 90px #fff;
-   }
+}
 
-   
+.titulo{
+display: flex;
+align-items: center;
+justify-content: center;
+position: relative;
+}
+.parrafo{
+align-items: center;
+justify-content: center;
+display: flex;
+
+}
+
+.navbar{
+font-family: sans-serif;
+color: rgb(113, 113, 113);
+display: flex;
+align-items: center;
+justify-content: center;
+position: relative;
+top: 50px;
+font-size: 60px;
+transition: 1s;
+}
+
+.header_navbar{
+border: 8px solid #fff;
+padding:  15px 60px;
+border-radius: 16px;
+box-shadow: inset 0 0 15px #fff;
+position: relative;
+height: 30vh;
+}
+.header_navbar h1 {
+  color: #ffffff;
+  text-align: center;
+  font-size: 3.5rem;
+  font-family: sans-serif;
+}
+
+.navbar:hover{
+color: #fff;
+text-shadow: 0 0 5px #fff,
+0 0 20px #fff,
+0 0 45px #fff,
+0 0 90px #fff;
+transform: scale(1.1);
+}
+

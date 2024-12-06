@@ -1,47 +1,59 @@
 body{
 
-    background-color: rgb(0, 0, 0);
+background-color: rgb(0, 0, 0);
     
-    }
-    .paginacion {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        list-style: none;
-        padding: var(--pagination-padding);
-        margin: var(--pagination-margin);
-        background-color: white;
-        flex-direction: column;
+}
+.paginacion {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+list-style: none;
+padding: var(--pagination-padding);
+background-color: rgb(129, 126, 126);
+grid-template-columns: repeat(4 , 1fr);
+}
+
+.info_ejecicio{
+    color: white;
+    font-family: sans-serif;
+
+}
     
+.paginacion a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    padding: var(--item-padding);
+margin: var(--item-margin);
+border: 1px solid var(--border-color);
+text-decoration: none;
+color: var(--text-color);
+border-radius: var(--border-radius);
+transition: background-color 0.3s ease;
+font-size: 21px;
+position: relative;
+top: 10px;
+}
+
+.color_boton{
+font-family: sans-serif;
+background-color: rgb(101, 101, 101);
+}
     
-    }
-    
-    .paginacion a {
-        padding: var(--item-padding);
-        margin: var(--item-margin);
-        border: 1px solid var(--border-color);
-        text-decoration: none;
-        color: var(--text-color);
-        border-radius: var(--border-radius);
-        transition: background-color 0.3s ease;
-        font-size: 21px;
-        position: relative;
-        top: 10px;
-    }
-    
-    .paginacion a:hover {
-        background-color: var(--hover-bg-color);
-    }
-    
-    .paginacion a.active {
-        background-color: var(--active-bg-color);
-        color: var(--active-text-color);
-    }
-    
-    .paginacion a.prev, .paginacion a.next {
-        font-weight: bold;
-    }
-    .ejercicio{
-    
-    margin: 20px;
-    }
+.paginacion a:hover {
+background-color: var(--hover-bg-color);
+}
+
+.paginacion a.active {
+background-color: var(--active-bg-color);
+color: var(--active-text-color);
+}
+
+.paginacion a.prev, .paginacion a.next {
+font-weight: bold;
+}
+/* 
+.ejercicio{ 
+margin: 20px;
+} */

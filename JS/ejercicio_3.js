@@ -1,7 +1,6 @@
-
 function dividirNumeros(dividendo, divisor) {
     if (divisor === 0) {
-        throw new Error("Error: No se puede dividir entre cero.");
+        return "Error: No se puede dividir entre cero.";
     }
     return dividendo / divisor;
 }
@@ -9,17 +8,13 @@ function dividirNumeros(dividendo, divisor) {
 let dividendo = prompt("Por favor, ingresa el dividendo:");
 let divisor = prompt("Por favor, ingresa el divisor:");
 
-try {
-    
-    dividendo = Number(dividendo);
-    divisor = Number(divisor);
+dividendo = Number(dividendo);
+divisor = Number(divisor);
 
-    if (isNaN(dividendo) || isNaN(divisor)) {
-        throw new Error("Error: Ambos valores deben ser números.");
-    }
-
+if (isNaN(dividendo) || isNaN(divisor)) {
+    console.log("Error: Ambos valores deben ser números.");
+} else {
     const resultado = dividirNumeros(dividendo, divisor);
     console.log(`El resultado de la división es: ${resultado}`);
-} catch (error) {
-    console.error(error.message);
+    
 }
