@@ -12,9 +12,9 @@ dividendo = Number(dividendo);
 divisor = Number(divisor);
 
 if (isNaN(dividendo) || isNaN(divisor)) {
-    console.log("Error: Ambos valores deben ser números.");
+    console.log("Error: Ambos valores deben ser numeros.");
 } else {
     const resultado = dividirNumeros(dividendo, divisor);
-    console.log(`El resultado de la división es: ${resultado}`);
+    console.log(`El resultado de la division es: ${resultado}`);
     
 }

@@ -1,15 +1,12 @@
 function determinarGrupo(nombre, sexo) {
-    const nombreMayus = nombre.toUpperCase();
-    
-
-    if ((sexo === 'mujer' && nombreMayus < 'M') || (sexo === 'hombree' && nombreMayus > 'N')) {
+    if ((sexo === 'mujer' && nombre < 'M') || (sexo === 'hombre' && nombre > 'N')) {
         return 'Grupo A';
     } else {
         return 'Grupo B';
     }
 }
 
-const nombre = prompt("Por favor, introduce tu nombre:");
+const nombre = prompt("Por favor, introduce tu nombre:").toUpperCase();
 const sexo = prompt("Por favor, introduce tu sexo (mujer/hombre):").toLowerCase();
 
 

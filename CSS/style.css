@@ -13,6 +13,14 @@ background-color: rgb(129, 126, 126);
 grid-template-columns: repeat(4 , 1fr);
 }
 
+.titulo{
+display: flex;
+align-items: center;
+justify-content: center;
+position: relative;
+color: white;
+}
+
 .info_ejecicio{
     color: white;
     font-family: sans-serif;
@@ -20,11 +28,11 @@ grid-template-columns: repeat(4 , 1fr);
 }
     
 .paginacion a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 120px;
-    padding: var(--item-padding);
+display: flex;
+justify-content: center;
+align-items: center;
+width: 120px;
+padding: var(--item-padding);
 margin: var(--item-margin);
 border: 1px solid var(--border-color);
 text-decoration: none;
@@ -53,7 +61,3 @@ color: var(--active-text-color);
 .paginacion a.prev, .paginacion a.next {
 font-weight: bold;
 }
-/* 
-.ejercicio{ 
-margin: 20px;
-} */

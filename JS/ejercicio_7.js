@@ -16,7 +16,7 @@ const rentaAnual = parseFloat(prompt("Por favor, introduce tu renta anual:"));
 
 if (isNaN(rentaAnual)) {
     
-    console.log("Por favor, introduce un valor numérico válido para la renta.");
+    console.log("Por favor, introduce un valor numerico válido para la renta.");
 } else {
     const tipoImpositivo = determinarTipoImpositivo(rentaAnual);
     alert(`Tu tipo impositivo es: ${tipoImpositivo}`);

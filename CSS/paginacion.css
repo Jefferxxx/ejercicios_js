@@ -19,12 +19,6 @@ background-color: beige;
 
 }
 
-.titulo{
-display: flex;
-align-items: center;
-justify-content: center;
-position: relative;
-}
 .parrafo{
 align-items: center;
 justify-content: center;

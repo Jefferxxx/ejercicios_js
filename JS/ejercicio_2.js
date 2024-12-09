@@ -1,7 +1,7 @@
 const contrasenaGuardada = "ñeño123";
 
 function esAlfanumerico(valor) {
-    const regex = /^[a-zA-Z0-9]+$/;
+    const regex = /^[a-zA-Z0-9]+$/i;
     return regex.test(valor);
 }
 

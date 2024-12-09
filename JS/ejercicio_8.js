@@ -4,7 +4,7 @@ const inaceptable = 0.0;
 const aceptable = 0.4;
 const meritorio = 0.6;
 
-let puntos = parseFloat(prompt("Introduce tu puntuación: "));
+let puntos = parseFloat(prompt("Introduce tu puntuacion: "));
 
 let nivel = "";
 
@@ -15,11 +15,11 @@ if (puntos === inaceptable) {
 } else if (puntos >= meritorio) {
     nivel = "Meritorio";
 } else {
-    nivel = "Puntuación no válida";
+    nivel = "Puntuacion no válida";
 }
 
-if (nivel === "Puntuación no válida") {
-    alert("Esta puntuación no es válida");
+if (nivel === "Puntuacion no valida") {
+    alert("Esta puntuacion no es valida");
 } else {
     alert(`Tu nivel de rendimiento es ${nivel}`);
     alert(`Te corresponde cobrar ${(puntos * bonificacion).toFixed(2)}€`);
