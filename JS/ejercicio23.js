@@ -1,6 +1,6 @@
 function convertirvelocidad(kmh){
-    return kmh / 3.6 ;
+    const mps = kmh * 1000 / 3600;
+    return mps
 }
 
-const velocidadkmh = 90;
-console.log('la velocidad en m/s es: ${covertirvelocidad(velocidadkmh).toFixed(2)} m/s');
+console.log(convertirvelocidad(90));
